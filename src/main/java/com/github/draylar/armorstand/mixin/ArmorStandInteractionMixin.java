@@ -34,7 +34,7 @@ public abstract class ArmorStandInteractionMixin {
         }
 
         // toggling arms and base
-        else if (player.isSneaking() && hand == Hand.MAIN_HAND && heldStackItem == Items.STICK || heldStackItem == Items.STONE_SLAB) {
+        else if (player.isSneaking() && hand == Hand.MAIN_HAND && heldStackItem == Items.STICK || heldStackItem == Items.SMOOTH_STONE_SLAB) {
             if (heldStackItem == Items.STICK) {
                 ((ArmorStandAccessor) this).asu_setShowArms(!((ArmorStandAccessor) this).asu_shouldShowArms());
             } else {
